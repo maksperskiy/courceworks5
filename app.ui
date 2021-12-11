@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="windowModality">
+   <enum>Qt::NonModal</enum>
+  </property>
+  <property name="enabled">
+   <bool>true</bool>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>340</width>
+    <height>400</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>340</width>
+    <height>400</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>340</width>
+    <height>400</height>
+   </size>
+  </property>
+  <property name="baseSize">
+   <size>
+    <width>340</width>
+    <height>410</height>
+   </size>
+  </property>
+  <property name="mouseTracking">
+   <bool>false</bool>
+  </property>
+  <property name="acceptDrops">
+   <bool>false</bool>
+  </property>
+  <property name="windowTitle">
+   <string>Hands detector</string>
+  </property>
+  <property name="windowOpacity">
+   <double>1.000000000000000</double>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QMainWindow{
+	background-color: #E6E6FF;
+}</string>
+  </property>
+  <property name="windowFilePath">
+   <string/>
+  </property>
+  <property name="iconSize">
+   <size>
+    <width>32</width>
+    <height>32</height>
+   </size>
+  </property>
+  <property name="animated">
+   <bool>true</bool>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QWidget" name="horizontalLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>330</y>
+      <width>321</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <property name="spacing">
+      <number>5</number>
+     </property>
+     <item>
+      <widget class="QPushButton" name="pushButton">
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+	height: 40px;
+	padding-bottom: 5px;
+	border: none;
+	font: 63 24pt &quot;Bahnschrift SemiBold Condensed&quot;;
+	color: #444444;
+	background-color:#FFF5D7;
+	border-radius: 5px;
+}
+QPushButton:hover{
+	color: #222222;
+	background-color: #FFF9E9;
+}
+QPushButton:pressed{
+	background-color:#bbbbff;
+}</string>
+       </property>
+       <property name="text">
+        <string>start</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButton_2">
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+	height: 40px;
+	padding-bottom: 5px;
+	border: none;
+	font: 63 24pt &quot;Bahnschrift SemiBold Condensed&quot;;
+	color: #444444;
+	background-color:#FFF5D7;
+	border-radius: 5px;
+}
+QPushButton:hover{
+	color: #222222;
+	background-color: #FFF9E9;
+}
+QPushButton:pressed{
+	background-color:#bbbbff;
+}</string>
+       </property>
+       <property name="text">
+        <string>demo</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="horizontalLayoutWidget_2">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>321</width>
+      <height>315</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout_2">
+     <property name="spacing">
+      <number>5</number>
+     </property>
+     <item>
+      <layout class="QVBoxLayout" name="verticalLayout_2">
+       <item>
+        <widget class="QLabel" name="label_4">
+         <property name="styleSheet">
+          <string notr="true">color: #444;
+font: 63 12pt &quot;Bahnschrift SemiBold&quot;;</string>
+         </property>
+         <property name="text">
+          <string>Actions</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QTextEdit" name="textEdit">
+         <property name="styleSheet">
+          <string notr="true">QTextEdit{
+ 	font: 63 12pt &quot;Bahnschrift&quot;;
+	background-color:#ccccff;
+	border-radius: 10px;
+}
+QTextEdit:hover{
+	background-color:#bbbbff;
+}</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QVBoxLayout" name="verticalLayout_3">
+       <item>
+        <spacer name="verticalSpacer_4">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>40</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_3">
+         <item>
+          <widget class="QLabel" name="label_5">
+           <property name="styleSheet">
+            <string notr="true">color: #444;
+font: 63 12pt &quot;Bahnschrift SemiBold&quot;;</string>
+           </property>
+           <property name="text">
+            <string>WebCemera</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QSpinBox" name="spinBox">
+           <property name="styleSheet">
+            <string notr="true">QSpinBox{
+	height: 32px;
+ 	font: 63 16pt &quot;Bahnschrift&quot;;
+	background-color:#ccccff;
+	border-radius: 5px;
+}
+QSpinBox:hover{
+	background-color:#bbbbff;
+}</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <spacer name="verticalSpacer_3">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>40</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <widget class="QLabel" name="label">
+         <property name="styleSheet">
+          <string notr="true">color: #444;
+font: 63 12pt &quot;Bahnschrift SemiBold&quot;;</string>
+         </property>
+         <property name="text">
+          <string>Folder</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="lineEdit">
+         <property name="styleSheet">
+          <string notr="true">QLineEdit{
+	height: 25px;
+ 	font: 63 12pt &quot;Bahnschrift&quot;;
+	background-color:#ccccff;
+	border-radius: 5px;
+}
+QLineEdit:hover{
+	background-color:#bbbbff;
+}</string>
+         </property>
+         <property name="text">
+          <string>Data</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <spacer name="verticalSpacer">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>40</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_2">
+         <property name="styleSheet">
+          <string notr="true">color: #444;
+font: 63 12pt &quot;Bahnschrift SemiBold&quot;;
+word-wrap: break-word;</string>
+         </property>
+         <property name="text">
+          <string>Number of sequences</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="lineEdit_2">
+         <property name="styleSheet">
+          <string notr="true">QLineEdit{
+	height: 25px;
+ 	font: 63 12pt &quot;Bahnschrift&quot;;
+	background-color:#ccccff;
+	border-radius: 5px;
+}
+QLineEdit:hover{
+	background-color:#bbbbff;
+}</string>
+         </property>
+         <property name="text">
+          <string>30</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <spacer name="verticalSpacer_2">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>40</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_3">
+         <property name="styleSheet">
+          <string notr="true">color: #444;
+font: 63 12pt &quot;Bahnschrift SemiBold&quot;;</string>
+         </property>
+         <property name="text">
+          <string>Sequence length</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="lineEdit_3">
+         <property name="styleSheet">
+          <string notr="true">QLineEdit{
+	height: 25px;
+ 	font: 63 12pt &quot;Bahnschrift&quot;;
+	background-color:#ccccff;
+	border-radius: 5px;
+}
+QLineEdit:hover{
+	background-color:#bbbbff;
+}</string>
+         </property>
+         <property name="text">
+          <string>40</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
